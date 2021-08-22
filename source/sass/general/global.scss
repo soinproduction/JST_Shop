@@ -7,10 +7,9 @@ body {
   font-family: "Raleway";
   color: #000000;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
-html, section {
+html {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Raleway";
@@ -41,6 +40,8 @@ button {
   outline: none;
   cursor: pointer;
   padding: 0;
+  margin: 0;
+  line-height: initial;
 }
 
 ul,
@@ -135,6 +136,10 @@ input[type="number"] {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 5px;
+}
+
+main {
+  padding-bottom: 120px;
 }
 
 

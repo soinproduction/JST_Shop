@@ -1,0 +1,39 @@
+.novelty-slider__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.swiper-pagination {
+  display: flex;
+  margin: 0 30px;
+  align-items: center;
+
+  span {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 3px;
+    background: #000000;
+    opacity: 0.3;
+    border-radius: 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 22px;
+    background: #E31E25;
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+}
