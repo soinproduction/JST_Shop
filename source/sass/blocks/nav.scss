@@ -1,1 +1,64 @@
+.header-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  transition: all .4s;
+
+  &:hover {
+    transform: rotate(-5deg);
+  }
+}
+
+.header-nav__item {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text--nav;
+  transition: all .3s;
+
+  & + & {
+    margin-left: 2.2vw;
+  }
+
+  &:hover {
+    color: #E31E25;
+    position: relative;
+  }
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    background: $nav--bg;
+    border-radius: 50%;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+
+    color: $color-text--white;
+
+  }
+}
 

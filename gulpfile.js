@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
+const fileinclude = require("gulp-file-include");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 const del = require("del");
@@ -101,12 +102,24 @@ gulp.task("sprite", () => {
     .pipe(gulp.dest("build/img/sprite"));
 });
 
+// gulp.task("html", () => {
+//   return gulp.src("source/*.html")
+//     .pipe(posthtml([
+//       include()
+//     ]))
+//     // .pipe(htmlmin({ collapseWhitespace: true }))
+//     .pipe(gulp.dest("build"));
+// });
+
 gulp.task("html", () => {
   return gulp.src("source/*.html")
+    .pipe(fileinclude())
     .pipe(posthtml([
       include()
     ]))
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: false
+    // }))
     .pipe(gulp.dest("build"));
 });
 

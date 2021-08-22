@@ -1,0 +1,46 @@
+.index-first {
+  min-height: 800px;
+  background-image: url(../img/index-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: flex-end;
+
+  &__text {
+    margin-bottom: 50px;
+
+    & > p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: $color-text;
+    }
+
+    & > h1 {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 110px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #E31E25;
+      text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.index-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.index-buttons__button:not(:first-child) {
+  margin-left: 2vw;
+}
