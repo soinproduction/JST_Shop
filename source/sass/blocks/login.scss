@@ -1,0 +1,65 @@
+.login-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    border: 1px solid rgba(68, 68, 68, 0.2);
+    padding: 60px;
+    width: 50%;
+    height: auto;
+
+    h1 {
+      font-family: $font-family--alt;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 100%;
+      color: $color-text--black;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 170%;
+      color: $color-text;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.login-social {
+  display: flex;
+  align-items: center;
+  grid-gap: 0 10px;
+  margin-bottom: 30px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F8F8FB;
+      transition: all .4s;
+
+      &:hover {
+        box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}

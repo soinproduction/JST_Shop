@@ -1,0 +1,28 @@
+.error-box {
+  display: flex;
+  max-width: 1070px;
+  justify-content: space-between;
+
+  &__coll {
+    width: 44%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  &__bottom {
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 170%;
+      color: $color-text;
+      margin-bottom: 50px;
+    }
+  }
+}

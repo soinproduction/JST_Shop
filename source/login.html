@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+    <section class="center-section">
+      <div class="container">
+        <div class="login-box">
+
+          <div class="login-box__item">
+            <h1>
+              Войти
+            </h1>
+            <p>
+              Для вашего удобства вы можете войти на наш сайт
+              с помощью социальных сетей
+            </p>
+
+            <ul class="login-social">
+              <li class="login-social__item">
+                <a href="#">
+                  <svg width="14" height="12">
+                    <use href='img/sprite/sprite.svg#vk'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="login-social__item">
+                <a href="#">
+                  <svg width="12" height="12">
+                    <use href='img/sprite/sprite.svg#twiter'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="login-social__item">
+                <a href="#">
+                  <svg width="12" height="12">
+                    <use href='img/sprite/sprite.svg#insta'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="login-social__item">
+                <a href="#">
+                  <svg width="8" height="12">
+                    <use href='img/sprite/sprite.svg#fb'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <form class="login-form" action="#">
+              <label class="login-form__label">
+                <input type="text" placeholder="Логин">
+              </label>
+
+              <label class="login-form__label">
+                <input type="password" placeholder="Пароль">
+              </label>
+
+              <div class="login-form__checkbox">
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="color-1" value="indigo">
+                    <span>Запомнить меня</span>
+                  </label>
+                </div>
+                <a href="#" class="login-form__forgot">
+                  Забыли пароль?
+                </a>
+              </div>
+
+              <div class="login-form__buttons">
+                <button class="login-form__sign main-button">
+                  Войти
+                </button>
+
+                <button class="login-form__registration main-button">
+                  Зарегистрироваться
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="login-box__image">
+            <picture>
+              <source type='image/webp' srcset='img/login.webp'>
+              <img width='470' height='610' src='img/login.png' alt='login-image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>
