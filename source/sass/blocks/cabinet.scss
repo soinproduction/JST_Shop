@@ -1,0 +1,105 @@
+.cabinet-nav {
+  margin-bottom: 35px;
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    button {
+      position: relative;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      color: $color-text--black;
+      opacity: .5;
+
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+
+      &.active {
+        opacity: 1;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          background: #000;
+          bottom: -6px;
+        }
+      }
+    }
+  }
+}
+
+.tabcontent {
+  display: none;
+}
+
+.cabinet-form {
+  width: 100%;
+  max-width: 720px;
+
+  label {
+    width: calc(100% / 2 - 15px) !important;
+  }
+
+  label.long-label {
+    width: 100% !important;
+  }
+
+  &__wrapp  {
+    .checkbox {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .order-buttons {
+    margin-top: 30px;
+  }
+}
+
+.cabinet-inner {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.cabinet-inner__coll {
+  width: 100%;
+  max-width: 100%;
+
+  .cart-descr__bottom {
+    justify-content: space-between;
+  }
+
+  .add-basket {
+    width: 240px;
+  }
+
+  .expected-size {
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 100%;
+      color: $color-text;
+    }
+
+    span {
+      color: #E31E25;
+      text-transform: uppercase;
+    }
+  }
+
+
+}

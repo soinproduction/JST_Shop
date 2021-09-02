@@ -28,10 +28,11 @@
       text-transform: uppercase;
       font-style: normal;
 
-      &:not(:first-child) {
-        margin-left: 5px;
+      &:first-child {
+        margin-right: 5px;
       }
     }
+
   }
 
   &__sale {

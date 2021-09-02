@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+    <section class="center-section">
+      <div class="container">
+
+        <div class="main-top">
+          <h2>
+            Избранное
+          </h2>
+        </div>
+
+       <div class="cart whish-box">
+        <div class="cart-coll whish-box__item">
+
+          <ul class="cart-coll__list cart-list">
+            <li class="cart-list__item">
+              <div class="cart-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/cart/img.webp'>
+                  <img width='130' height='140' src='img/cart/img.png' alt='picture'>
+                </picture>
+              </div>
+              <div class="cart-descr">
+                <div class="cart-descr__top">
+                  <h2>
+                    Длинное пальто (42-44)
+                  </h2>
+                  <span class="item-color"></span>
+                </div>
+                <div class="cart-descr__bottom">
+                  <div class="order-price cart-descr__price">
+                    <p class="order-price__old">
+                      9999 ₽
+                    </p>
+
+                    <p class="order-price__new">
+                      7999 ₽
+                    </p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="cart-descr__total">
+                    <p>
+                      7999 ₽
+                    </p>
+                  </div>
+
+                  <button class="add-basket main-button">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+
+              <button class="cart-list__hide">
+                <svg  width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#hide'></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="cart-list__item">
+              <div class="cart-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/cart/img2.webp'>
+                  <img width='130' height='140' src='img/cart/img2.png' alt='picture'>
+                </picture>
+              </div>
+              <div class="cart-descr">
+                <div class="cart-descr__top">
+                  <h2>
+                    Куртка с капюшоном (L)
+                  </h2>
+                  <span class="item-color item-color--color"></span>
+                </div>
+                <div class="cart-descr__bottom">
+                  <div class="order-price cart-descr__price">
+                    <p class="order-price__new">
+                      7999 ₽
+                    </p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="cart-descr__total">
+                    <p>
+                      7999 ₽
+                    </p>
+                  </div>
+
+                  <button class="add-basket main-button">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+
+              <button class="cart-list__hide">
+                <svg  width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#hide'></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="cart-list__item">
+              <div class="cart-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/cart/img3.webp'>
+                  <img width='130' height='140' src='img/cart/img3.png' alt='picture'>
+                </picture>
+              </div>
+              <div class="cart-descr">
+                <div class="cart-descr__top">
+                  <h2>
+                    Куртка с капюшоном (L)
+                  </h2>
+                  <span class="item-color item-color--color"></span>
+                </div>
+                <div class="cart-descr__bottom">
+                  <div class="order-price cart-descr__price">
+                    <p class="order-price__new">
+                      7999 ₽
+                    </p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="cart-descr__total">
+                    <p>
+                      7999 ₽
+                    </p>
+                  </div>
+
+                  <button class="add-basket main-button">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+
+              <button class="cart-list__hide">
+                <svg  width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#hide'></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+
+        </div>
+       </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+    <section class="center-section">
+      <div class="container">
+       <div class="cart">
+        <div class="cart-coll">
+
+          <ul class="cart-coll__list cart-list">
+            <li class="cart-list__item">
+              <div class="cart-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/cart/img.webp'>
+                  <img width='130' height='140' src='img/cart/img.png' alt='picture'>
+                </picture>
+              </div>
+              <div class="cart-descr">
+                <div class="cart-descr__top">
+                  <h2>
+                    Длинное пальто (42-44)
+                  </h2>
+                  <span class="item-color"></span>
+                </div>
+                <div class="cart-descr__bottom">
+                  <div class="order-price cart-descr__price">
+                    <p class="order-price__old">
+                      9999 ₽
+                    </p>
+
+                    <p class="order-price__new">
+                      7999 ₽
+                    </p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="cart-descr__total">
+                    <p>
+                      7999 ₽
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="cart-list__hide">
+                <svg  width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#hide'></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="cart-list__item">
+              <div class="cart-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/cart/img2.webp'>
+                  <img width='130' height='140' src='img/cart/img2.png' alt='picture'>
+                </picture>
+              </div>
+              <div class="cart-descr">
+                <div class="cart-descr__top">
+                  <h2>
+                    Куртка с капюшоном (L)
+                  </h2>
+                  <span class="item-color item-color--color"></span>
+                </div>
+                <div class="cart-descr__bottom">
+                  <div class="order-price cart-descr__price">
+                    <p class="order-price__new">
+                      7999 ₽
+                    </p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="cart-descr__total">
+                    <p>
+                      7999 ₽
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="cart-list__hide">
+                <svg  width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#hide'></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+
+        </div>
+        <aside class="order-aside">
+          <h2 class="order-aside__title">
+            Ваш заказ
+          </h2>
+          <ul class="order-aside__list">
+            <li class="order-aside__position order-aside__inner">
+              <p>
+                Подытог
+              </p>
+              <span>
+                13998 ₽
+              </span>
+            </li>
+            <li class="order-aside__position order-aside__inner">
+              <p>
+                Скидка
+              </p>
+              <span>
+                2000 ₽
+              </span>
+            </li>
+            <li class="order-aside__position order-aside__inner">
+              <p>
+                Доставка
+              </p>
+              <span>
+                500 ₽
+              </span>
+            </li>
+            <li class="order-aside__position order-aside__total">
+              <p>
+                Итого:
+              </p>
+              <span>
+                14498 ₽
+              </span>
+            </li>
+          </ul>
+
+          <button class="order-aside__button main-button">
+            Оформить
+          </button>
+
+        </aside>
+       </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+    <section class="center-section">
+      <div class="container">
+
+       <div class="order-box">
+         <div class="order-top">
+           <a href="#" class="order-top__link order-top__link--current">Детали заказа</a>
+           <a href="#" class="order-top__link">Способ оплаты</a>
+           <a href="#" class="order-top__link">Заказ</a>
+         </div>
+
+         <div class="order-inner">
+
+          <div class="order-inner__coll">
+            <form class="order-form" action="#">
+              <h2>
+                Персональные данные
+              </h2>
+              <div class="order-form__wrapp">
+                <label for="#">
+                  <input type="text" placeholder="Фамилия">
+                </label>
+
+                <label for="#">
+                  <input type="text" placeholder="Имя">
+                </label>
+
+                <label for="#">
+                  <input type="tel" placeholder="Телефон">
+                </label>
+
+                <label for="#">
+                  <input type="email" placeholder="E-mail">
+                </label>
+
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="color-1" value="indigo">
+                    <span>Я согласен с политикой конфиденциальности</span>
+                  </label>
+                </div>
+              </div>
+
+              <h2>
+                Адрес доставки
+              </h2>
+              <div class="order-form__wrapp">
+                  <div class='select-city'>
+                    <input list="city-list" name="choice-city" placeholder="Выберите город"/>
+                    <datalist id="city-list">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+                  </div>
+
+                <label class="long-label" for="#">
+                  <input type="text" placeholder="Введите адрес">
+                </label>
+
+                <label for="#">
+                  <input type="tel" placeholder="Введите день доставки">
+                </label>
+
+                <label for="#">
+                  <input type="email" placeholder="Введите время доставки">
+                </label>
+
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="color-1" value="indigo">
+                    <span>Я согласен с политикой конфиденциальности</span>
+                  </label>
+                </div>
+
+                <textarea name="#" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+
+
+              </div>
+
+
+              <div class="order-buttons">
+                <button class="order-buttons__back">
+                  <svg  width='31' height='12'>
+                    <use href='img/sprite/sprite.svg#back'></use>
+                  </svg>
+
+                  <span>
+                    Назад
+                  </span>
+                </button>
+
+                <button class="order-buttons__select main-button">
+                  Продолжить
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+            <aside class="order-aside">
+              <h2 class="order-aside__title">
+                Ваш заказ
+              </h2>
+
+              <ul class="order-aside__list">
+                <li class="order-aside__position">
+                  <div class="order-position">
+                    <div class="order-position__img">
+                      <picture>
+                      <source type='image/webp' srcset='img/aside.webp'>
+                      <img width='53' height='60' src='img/aside.png' alt='aside-image'>
+                      </picture>
+                    </div>
+                    <div class="order-position__descr">
+                      <h3>
+                        Длинное пальто
+                      </h3>
+
+                      <div class="order-price">
+                        <p class="order-price__new">
+                          7999 ₽
+                        </p>
+
+                        <p class="order-price__old">
+                          9999 ₽
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="order-aside__position">
+                  <div class="order-position">
+                    <div class="order-position__img">
+                      <picture>
+                      <source type='image/webp' srcset='img/aside2.webp'>
+                      <img width='53' height='60' src='img/aside2.png' alt='aside-image'>
+                      </picture>
+                    </div>
+                    <div class="order-position__descr">
+                      <h3>
+                        Куртка с капюшоном
+                      </h3>
+                      <div class="order-price">
+                        <p class="order-price__new">
+                          5999 ₽
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="order-aside__position order-aside__inner">
+                  <p>
+                    Стоимость
+                  </p>
+                  <span>
+                    13998 ₽
+                  </span>
+                </li>
+                <li class="order-aside__position order-aside__inner">
+                  <p>
+                    Скидка
+                  </p>
+                  <span>
+                    2000 ₽
+                  </span>
+                </li>
+                <li class="order-aside__position order-aside__inner">
+                  <p>
+                    Доставка
+                  </p>
+                  <span>
+                    500 ₽
+                  </span>
+                </li>
+                <li class="order-aside__position order-aside__total">
+                  <p>
+                    Итого:
+                  </p>
+                  <span>
+                    14498 ₽
+                  </span>
+                </li>
+              </ul>
+            </aside>
+
+
+         </div>
+
+       </div>
+
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

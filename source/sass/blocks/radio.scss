@@ -1,0 +1,77 @@
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+
+  user-select: none;
+
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: $color-text--black;
+  opacity: .5;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
+  content: "";
+
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 8;
+  border: 1px solid rgba(68, 68, 68, 0.2);
+  border-radius: 50%;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='10' viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4.5' cy='5' r='4.5' fill='black'/%3E%3C/svg%3E%0A");
+  border: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.custom-radio:checked + label {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled + label::before {
+  background-color: transparent;
+}
+
+body {
+  padding: 20px 50px;
+}
+
+.radio {
+  margin-bottom: 0.4em;
+
+  label {
+    width: initial !important;
+  }
+}
+
+
+.radio-box {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

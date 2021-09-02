@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+   <section class="item-sec">
+     <div class="container">
+      <div class="item-box">
+        <div class="item-box__coll">
+          <div class="item-box__sliders items-sliders">
+            <div class="swiper-container mySwiperBig">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card--sale">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/big-slider/img.webp'>
+                      <img width='670' height='920' src='img/big-slider/img.png' alt='picture'>
+                    </picture>
+                  </div>
+                  <div class="card__left">
+                    <span class="card__sale">
+                      sale
+                    </span>
+                    <span class="card__new">
+                      new
+                    </span>
+                  </div>
+
+                  <button class="like-btn">
+                    <svg width="19" height="18">
+                      <use href='img/sprite/sprite.svg#heart'></use>
+                    </svg>
+                  </button>
+
+                </div>
+                <div class="swiper-slide card--new">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/big-slider/img.webp'>
+                      <img width='670' height='920' src='img/big-slider/img.png' alt='picture'>
+                    </picture>
+                  </div>
+
+                  <div class="card__left">
+                    <span class="card__sale">
+                      sale
+                    </span>
+                    <span class="card__new">
+                      new
+                    </span>
+                  </div>
+
+                  <button class="like-btn">
+                    <svg width="19" height="18">
+                      <use href='img/sprite/sprite.svg#heart'></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide card--new card--sale">
+                  <div class="swiper-slide__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/big-slider/img.webp'>
+                      <img width='670' height='920' src='img/big-slider/img.png' alt='picture'>
+                    </picture>
+                  </div>
+
+                  <div class="card__left">
+                    <span class="card__sale">
+                      sale
+                    </span>
+                    <span class="card__new">
+                      new
+                    </span>
+                  </div>
+
+                  <button class="like-btn">
+                    <svg width="19" height="18">
+                      <use href='img/sprite/sprite.svg#heart'></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="#" class="swiper-container mySwiperMini">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source type='image/webp' srcset='img/big-slider/mini.webp'>
+                    <img width='70' height='90' src='img/big-slider/mini.png' alt='picture'>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type='image/webp' srcset='img/big-slider/mini2.webp'>
+                    <img width='70' height='90' src='img/big-slider/mini2.png' alt='picture'>
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source type='image/webp' srcset='img/big-slider/mini3.webp'>
+                    <img width='70' height='90' src='img/big-slider/mini3.png' alt='picture'>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="item-tab">
+            <button class="tablinks active" onclick="cabinetTabs(event, 'item1')">London</button>
+            <button class="tablinks" onclick="cabinetTabs(event, 'item2')">Paris</button>
+          </nav>
+
+          <div class="item-tabcontent">
+            <article id="item1" class="item-tabcontent__inner tabcontent" style="display: block;">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus tellus, imperdiet quis condimentum sed, eleifend sit amet mi. Duis a risus tincidunt, accumsan nulla sit amet, fringilla velit. Fusce posuere odio vitae accumsan pulvinar. Sed sed tincidunt risus. Nam imperdiet mauris a arcu viverra lacinia vel sed felis. Aliquam posuere porttitor fermentum. Nunc sollicitudin diam lorem, et semper mi pellentesque et.
+              </p>
+
+              <p>
+                Fusce et euismod elit, vel pretium neque. Cras vulputate tincidunt dapibus. Fusce placerat tempor nulla, sed aliquam mauris. Duis purus risus, interdum vel nulla ut, egestas lobortis urna. Sed elementum congue consectetur. Fusce dignissim at risus eget semper. Phasellus quis turpis ut felis tincidunt finibus id eget nibh. Fusce accumsan nibh sem, sed bibendum erat malesuada pulvinar. Cras ut maximus odio. Morbi dapibus quam eu augue malesuada, nec iaculis elit volutpat.
+              </p>
+            </article>
+
+            <div id="item2" class="tabcontent">
+
+              <div class="tabs-slider">
+                <article class="tabs-slider__top">
+                  <p>
+                    Отмечай <a href="#">@jst_russia</a> на фотографиях в Instagram, чтобы попасть в нашу подборку
+                    и получить скидку на следующий заказ.
+                  </p>
+                </article>
+
+
+                <div class="tabs-slider__wrapper">
+                  <div class="myTabsSlider  swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="myTabsSlider__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/tabs-slider/img.webp'>
+                            <img width='170' height='170' src='img/tabs-slider/img.png' alt='image'>
+                          </picture>
+                          <a href="#" class="myTabsSlider__link">@jane_doe</a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="myTabsSlider__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/tabs-slider/img.webp'>
+                            <img width='170' height='170' src='img/tabs-slider/img.png' alt='image'>
+                          </picture>
+                          <a href="#" class="myTabsSlider__link">@jane_doe</a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="myTabsSlider__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/tabs-slider/img2.webp'>
+                            <img width='170' height='170' src='img/tabs-slider/img2.png' alt='image'>
+                          </picture>
+                          <a href="#" class="myTabsSlider__link">@jane_doe</a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="myTabsSlider__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/tabs-slider/img3.webp'>
+                            <img width='170' height='170' src='img/tabs-slider/img3.png' alt='image'>
+                          </picture>
+                          <a href="#" class="myTabsSlider__link">@jane_doe</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-navigation">
+                    <button class="myTabsSlider__prev swiper-prev">
+                      <svg width="18" height="30" >
+                        <use href='img/sprite/sprite.svg#tabs-arrow'></use>
+                      </svg>
+                    </button>
+                    <button class="myTabsSlider__next swiper-next">
+                      <svg width="18" height="30" >
+                        <use href='img/sprite/sprite.svg#tabs-arrow'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="item-descr">
+          <div class="item-descr__box">
+            <h2>
+              Широкие джинсы
+            </h2>
+
+            <article class="item-descr__article">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed auctor odio, sed eleifend erat.
+                Cras sodales vestibulum sem, at faucibus leo posuere
+                sagittis.
+              </p>
+            </article>
+
+            <ul class="item-descr__list">
+              <li class="item-descr__item">
+                <p>
+                  Состав:
+                </p>
+                <p>
+                  Хлопок - 100%
+                </p>
+              </li>
+
+              <li class="item-descr__item">
+                <p>
+                  Артикул
+                </p>
+                <p>
+                  GD2361
+                </p>
+              </li>
+
+              <li class="item-descr__item">
+                <p>
+                  Цвета:
+                </p>
+                <div class="color-box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+
+            <p class="item-descr__price">
+              5990 ₽
+            </p>
+
+            <div class="item-descr__table">
+              <span>
+                Талия:
+              </span>
+
+              <div class="item-descr__size">
+                <span>
+                  29
+                </span>
+                <span class="active">
+                  30
+                </span>
+                <span>
+                  31
+                </span>
+                <span>
+                  32
+                </span>
+                <span>
+                  34
+                </span>
+                <span>
+                  36
+                </span>
+              </div>
+
+            </div>
+
+            <div class="item-descr__table">
+              <span>
+                Длина:
+              </span>
+
+              <div class="item-descr__size">
+                <span>
+                  32
+                </span>
+                <span>
+                  34
+                </span>
+              </div>
+            </div>
+
+            <div class="item-descr__buttons">
+              <button class="item-descr__button main-button">
+                Подобрать размер
+              </button>
+              <button class="item-descr__button main-button">
+                Нет моего размера
+              </button>
+              <button class="item-descr__button item-descr__button--black main-button">
+                В корзину
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="add-fasion">
+        <h2>
+          Дополни свой образ
+        </h2>
+
+        <div class="add-fasion__box">
+          <a href="#" class="add-fasion__item">
+
+            <div class="card card--sale card--new">
+              <div class="card__top">
+                <div class="card__left">
+                  <span class="card__sale">
+                    sale
+                  </span>
+                  <span class="card__new">
+                    new
+                  </span>
+                </div>
+
+                <button class="like-btn">
+                  <svg width="19" height="18">
+                    <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+
+
+              </div>
+              <div class="card__image">
+                <picture>
+                  <source type='image/webp' srcset='img/slider/img.webp'>
+                  <img width='270' height='360' src='img/slider/img.png' alt='slider-image'>
+                </picture>
+              </div>
+
+              <div class="card__bottom">
+                <p>
+                  Осенняя парка
+                </p>
+
+                <div class="card-price">
+                  <p class="card-price__new">
+                    12450 ₽
+                  </p>
+
+                  <p class="card-price__old">
+                    15999 ₽
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </a>
+          <a href="#" class="add-fasion__item">
+            <div class="card card--sale">
+              <div class="card__top">
+                <div class="card__left">
+                  <span class="card__sale">
+                    sale
+                  </span>
+                  <span class="card__new">
+                    new
+                  </span>
+                </div>
+                <button class="like-btn">
+                  <svg width="19" height="18">
+                    <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__image">
+                <picture>
+                  <source type='image/webp' srcset='img/slider/img2.webp'>
+                  <img width='270' height='360' src='img/slider/img2.png' alt='slider-image'>
+                </picture>
+              </div>
+              <div class="card__bottom">
+                <p>
+                  Джинсовая куртка
+                </p>
+                <div class="card-price">
+                  <p class="card-price__new">
+                    12450 ₽
+                  </p>
+                  <p class="card-price__old">
+                    15999 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="add-fasion__item">
+            <div class="card card--sale">
+              <div class="card__top">
+                <div class="card__left">
+                  <span class="card__sale">
+                    sale
+                  </span>
+                  <span class="card__new">
+                    new
+                  </span>
+                </div>
+                <button class="like-btn">
+                  <svg width="19" height="18">
+                    <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__image">
+                <picture>
+                  <source type='image/webp' srcset='img/slider/img3.webp'>
+                  <img width='270' height='360' src='img/slider/img3.png' alt='slider-image'>
+                </picture>
+              </div>
+              <div class="card__bottom">
+                <p>
+                  Хлопковая футболка
+                </p>
+                <div class="card-price">
+                  <p class="card-price__new">
+                    12450 ₽
+                  </p>
+                  <p class="card-price__old">
+                    15999 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="add-fasion__item">
+            <div class="card card--sale">
+              <div class="card__top">
+                <div class="card__left">
+                  <span class="card__sale">
+                    sale
+                  </span>
+                  <span class="card__new">
+                    new
+                  </span>
+                </div>
+                <button class="like-btn">
+                  <svg width="19" height="18">
+                    <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__image">
+                <picture>
+                  <source type='image/webp' srcset='img/slider/img4.webp'>
+                  <img width='270' height='360' src='img/slider/img4.png' alt='slider-image'>
+                </picture>
+              </div>
+              <div class="card__bottom">
+                <p>
+                  Широкие джинсы
+                </p>
+                <div class="card-price">
+                  <p class="card-price__new">
+                    12450 ₽
+                  </p>
+                  <p class="card-price__old">
+                    15999 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+     </div>
+   </section>
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

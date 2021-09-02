@@ -1,10 +1,6 @@
 
 @import "blocks/header.scss";
 
-@import "blocks/index-first.scss";
-@import "blocks/index-second.scss";
-@import "blocks/index-third.scss";
-@import "blocks/index-frouth.scss";
 
 @import "blocks/footer.scss";
 
@@ -15,10 +11,22 @@
 @import "blocks/buttons.scss";
 
 @import "blocks/nav.scss";
+@import "blocks/add-fasion.scss";
+@import "blocks/cart.scss";
+@import "blocks/catalog.scss";
+@import "blocks/cabinet.scss";
+@import "blocks/tabs-accordion.scss";
+@import "blocks/number-form.scss";
+@import "blocks/whish.scss";
+@import "blocks/order-aside.scss";
+@import "blocks/cabinet-aside.scss";
+@import "blocks/order.scss";
 @import "blocks/checkbox.scss";
+@import "blocks/radio.scss";
 @import "blocks/login.scss";
 @import "blocks/404.scss";
 @import "blocks/search-form.scss";
+@import "blocks/order-form.scss";
 @import "blocks/login-form.scss";
 @import "blocks/about-us.scss";
 @import "blocks/contacts.scss";
@@ -26,5 +34,11 @@
 @import "blocks/sliders.scss";
 @import "blocks/card.scss";
 @import "blocks/catalog-nav.scss";
+@import "blocks/item.scss";
+@import "blocks/index-first.scss";
+@import "blocks/index-second.scss";
+@import "blocks/index-third.scss";
+@import "blocks/index-frouth.scss";
+@import "blocks/option-sec.scss";
 @import "blocks/media.scss";
 

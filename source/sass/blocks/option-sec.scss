@@ -1,0 +1,41 @@
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__coll {
+    width: 100%;
+
+    &:nth-child(1) {
+      max-width: 270px;
+    }
+
+    &:nth-child(2) {
+      max-width: 880px;
+    }
+  }
+
+  &__form input {
+    padding: 8px 0 16px;
+  }
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    grid-gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 42px;
+  }
+}

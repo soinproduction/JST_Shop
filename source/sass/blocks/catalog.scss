@@ -1,0 +1,39 @@
+.catalog-first {
+  margin-bottom: 60px;
+}
+
+.catalog-top {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 30px;
+
+  .catalog-top__item {
+    position: relative;
+
+    h2 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-text--white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__image img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: all .4s;
+
+    &:hover {
+      box-shadow: 7px 7px 15px 7px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+
+  <main>
+
+    <section class="center-section">
+      <div class="container">
+
+        <div class="main-top">
+          <h2>
+            Дмитрий Котов
+          </h2>
+        </div>
+
+        <div class="cabinet-nav">
+          <nav class="tab">
+            <button class="tablinks active" onclick="cabinetTabs(event, 'Profile')">Профиль</button>
+            <button class="tablinks" onclick="cabinetTabs(event, 'Orders')">Заказы</button>
+            <button class="tablinks" onclick="cabinetTabs(event, 'WishList')">Лист Ожидания</button>
+          </nav>
+        </div>
+
+        <div class="cabinet-box">
+          <ul class="cabinet-box__list">
+            <li id="Profile" class="cabinet-inner tabcontent" style="display: block;">
+              <form class="order-form cabinet-form" action="#">
+                <h2>
+                  Персональные данные
+                </h2>
+                <div class="order-form__wrapp">
+                  <label for="#">
+                    <input type="text" placeholder="Фамилия">
+                  </label>
+
+                  <label for="#">
+                    <input type="text" placeholder="Имя">
+                  </label>
+
+                  <label for="#">
+                    <input type="tel" placeholder="Телефон">
+                  </label>
+
+                  <label for="#">
+                    <input type="email" placeholder="E-mail">
+                  </label>
+
+                  <div class="cabinet-form__wrapp">
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" name="mail-send" value="cinfirm">
+                        <span>Я даю согласие на e-mail рассылки</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" name="news" checked value="confirm">
+                        <span>Я даю согласие на получение новостей</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <h2>
+                  Смена Пароля
+                </h2>
+                <div class="order-form__wrapp">
+
+                  <label class="long-label" for="#">
+                    <input type="password" placeholder="Введите Старый Пароль">
+                  </label>
+
+                  <label for="#">
+                    <input type="password" placeholder="Введите Новый Пароль ">
+                  </label>
+
+                  <label for="#">
+                    <input type="password" placeholder="Повторите Новый Пароль">
+                  </label>
+                </div>
+
+                <div class="order-buttons">
+                  <button class="order-buttons__select main-button">
+                    Изменить
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li id="Orders" class="cabinet-inner tabcontent">
+
+              <div class="tabcontent__inner">
+                <div class="cabinet-inner__accordions">
+                  <ul class="cabinet-inner__accordion">
+
+                    <li class="cabinet-inner__item">
+                      <ul>
+                        <li class="accordion-list accordion">
+                          <p class="accordion-list__number">
+                            №137821
+                          </p>
+                          <p class="accordion-list__date">
+                            02.06.2021
+                          </p>
+                          <p class="accordion-list__status accordion-list__status--way">
+                            В пути
+                          </p>
+                        </li>
+                        <li class="accordion-panel panel">
+                          <ul class="accordion-panel__list">
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img.webp'>
+                                  <img width='50' height='55' src='img/cart/img.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Длиное пальто
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img2.webp'>
+                                  <img width='50' height='55' src='img/cart/img2.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Куртка с капюшоном
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item accordion-info">
+                              <div class="accordion-info__top">
+                                <p class="accordion-info__descr">
+                                  Итого (с доставкой)
+                                </p>
+
+                                <span class="accordion-info__total">
+                                  14498 ₽
+                                </span>
+                              </div>
+
+                              <div class="accordion-info__bottom">
+                                <p class="accordion-info__descr">
+                                  Адрес доставки
+                                </p>
+
+                                <span class="accordion-info__adres">
+                                  Санкт-Петербург, ул. Варшавская 25, кв. 13
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="cabinet-inner__item">
+                      <ul>
+                        <li class="accordion-list accordion">
+                          <p class="accordion-list__number">
+                            №137821
+                          </p>
+                          <p class="accordion-list__date">
+                            02.06.2021
+                          </p>
+                          <p class="accordion-list__status">
+                            Доставлено
+                          </p>
+                        </li>
+                        <li class="accordion-panel panel">
+                          <ul class="accordion-panel__list">
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img.webp'>
+                                  <img width='50' height='55' src='img/cart/img.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Длиное пальто
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img2.webp'>
+                                  <img width='50' height='55' src='img/cart/img2.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Куртка с капюшоном
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item accordion-info">
+                              <div class="accordion-info__top">
+                                <p class="accordion-info__descr">
+                                  Итого (с доставкой)
+                                </p>
+
+                                <span class="accordion-info__total">
+                                  14498 ₽
+                                </span>
+                              </div>
+
+                              <div class="accordion-info__bottom">
+                                <p class="accordion-info__descr">
+                                  Адрес доставки
+                                </p>
+
+                                <span class="accordion-info__adres">
+                                  Санкт-Петербург, ул. Варшавская 25, кв. 13
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="cabinet-inner__item">
+                      <ul>
+                        <li class="accordion-list accordion">
+                          <p class="accordion-list__number">
+                            №137821
+                          </p>
+                          <p class="accordion-list__date">
+                            02.06.2021
+                          </p>
+                          <p class="accordion-list__status">
+                            Доставлено
+                          </p>
+                        </li>
+                        <li class="accordion-panel panel">
+                          <ul class="accordion-panel__list">
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img.webp'>
+                                  <img width='50' height='55' src='img/cart/img.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Длиное пальто
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item">
+                              <div class="accordion-panel__image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cart/img2.webp'>
+                                  <img width='50' height='55' src='img/cart/img2.png' alt='picture'>
+                                </picture>
+                              </div>
+
+                              <h2>
+                                Куртка с капюшоном
+                              </h2>
+
+                              <div class="order-price">
+                                <p class="order-price__new">
+                                  7999 ₽
+                                </p>
+                              </div>
+
+                            </li>
+
+                            <li class="accordion-panel__item accordion-info">
+                              <div class="accordion-info__top">
+                                <p class="accordion-info__descr">
+                                  Итого (с доставкой)
+                                </p>
+
+                                <span class="accordion-info__total">
+                                  14498 ₽
+                                </span>
+                              </div>
+
+                              <div class="accordion-info__bottom">
+                                <p class="accordion-info__descr">
+                                  Адрес доставки
+                                </p>
+
+                                <span class="accordion-info__adres">
+                                  Санкт-Петербург, ул. Варшавская 25, кв. 13
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <aside class="cabinet-aside">
+                  <button class="cabinet-aside__button main-button">
+                    Отследить посылку
+                  </button>
+
+                  <ul class="cabinet-aside__list">
+                    <li class="cabinet-aside__item">
+                      <picture>
+                      <source type='image/webp' srcset='img/api-img.webp'>
+                      <img width='290' height='470' src='img/api-img.png' alt=''>
+                      </picture>
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+
+
+
+            </li>
+            <li id="WishList" class="cabinet-inner tabcontent">
+                <div class="cart-coll cabinet-inner__coll">
+                  <ul class="cart-coll__list cart-list">
+                    <li class="cart-list__item">
+                      <div class="cart-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/cart/img.webp'>
+                          <img width='130' height='140' src='img/cart/img.png' alt='picture'>
+                        </picture>
+                      </div>
+                      <div class="cart-descr">
+                        <div class="cart-descr__top">
+                          <h2>
+                            Длинное пальто (42-44)
+                          </h2>
+                          <span class="item-color"></span>
+                        </div>
+                        <div class="cart-descr__bottom">
+                          <div class="order-price cart-descr__price">
+                            <p class="order-price__old">
+                              9999 ₽
+                            </p>
+
+                            <p class="order-price__new">
+                              7999 ₽
+                            </p>
+                          </div>
+                          <div class="expected-size">
+                            <p>
+                              Ожидается размер
+                              <span>
+                                s
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="cart-list__hide">
+                        <svg  width='25' height='25'>
+                          <use href='img/sprite/sprite.svg#hide'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="cart-list__item">
+                      <div class="cart-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/cart/img.webp'>
+                          <img width='130' height='140' src='img/cart/img.png' alt='picture'>
+                        </picture>
+                      </div>
+                      <div class="cart-descr">
+                        <div class="cart-descr__top">
+                          <h2>
+                            Длинное пальто (42-44)
+                          </h2>
+                          <span class="item-color"></span>
+                        </div>
+                        <div class="cart-descr__bottom">
+                          <div class="order-price cart-descr__price">
+                            <p class="order-price__new">
+                              7999 ₽
+                            </p>
+                          </div>
+                          <div class="expected-size">
+                            <p>
+                              Ожидается размер
+                              <span>
+                                xl
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="cart-list__hide">
+                        <svg  width='25' height='25'>
+                          <use href='img/sprite/sprite.svg#hide'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="cart-list__item">
+                      <div class="cart-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/cart/img.webp'>
+                          <img width='130' height='140' src='img/cart/img.png' alt='picture'>
+                        </picture>
+                      </div>
+                      <div class="cart-descr">
+                        <div class="cart-descr__top">
+                          <h2>
+                            Длинное пальто (42-44)
+                          </h2>
+                          <span class="item-color"></span>
+                        </div>
+                        <div class="cart-descr__bottom">
+                          <div class="order-price cart-descr__price">
+                            <p class="order-price__new">
+                              7999 ₽
+                            </p>
+                          </div>
+                          <button class="add-basket main-button">
+                            В корзину
+                          </button>
+                        </div>
+                      </div>
+
+                      <button class="cart-list__hide">
+                        <svg  width='25' height='25'>
+                          <use href='img/sprite/sprite.svg#hide'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+
+
+                </div>
+            </li>
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

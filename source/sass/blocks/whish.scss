@@ -1,0 +1,19 @@
+.whish-box {
+  &__item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cart-descr__total {
+    margin: 0 auto;
+  }
+}
+
+.add-basket {
+  color: #fff;
+  background: #000;
+
+  &::before {
+    background: inherit;
+  }
+}
