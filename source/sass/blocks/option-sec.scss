@@ -1,3 +1,7 @@
+.option-sec {
+  margin-bottom: 50px;
+}
+
 .option-box {
   display: flex;
   justify-content: space-between;
@@ -12,6 +16,7 @@
 
     &:nth-child(2) {
       max-width: 880px;
+      align-items: flex-end;
     }
   }
 
@@ -35,7 +40,19 @@
   &__item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     min-height: 42px;
+  }
+
+  &__icon.active {
+    svg {
+      fill: #E31E25;
+    }
+  }
+
+  &__icon {
+    svg {
+      fill: #C4C4C4;
+    }
   }
 }

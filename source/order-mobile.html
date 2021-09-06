@@ -10,67 +10,8 @@
       <div class="container">
 
        <div class="order-box">
-         <div class="order-top">
-           <a href="#" class="order-top__link order-top__link--current">Детали заказа</a>
-           <a href="#" class="order-top__link order-top__link--current">Способ оплаты</a>
-           <a href="#" class="order-top__link">Заказ</a>
-         </div>
-
          <div class="order-inner">
-
-          <div class="order-inner__coll">
-            <form class="order-form order-form--pay" action="#">
-              <h2>
-                Способы Оплаты
-              </h2>
-
-              <div class="order-form__wrapp radio-box">
-
-                <div class="radio">
-                  <input class="custom-radio" type="radio" id="value-1" name="color" value="indigo">
-                  <label for="value-1">Банковская карта</label>
-                </div>
-
-                <div class="radio">
-                  <input class="custom-radio" type="radio" id="value-2" name="color" value="indigo">
-                  <label for="value-2">Google Pay</label>
-                </div>
-
-                <div class="radio">
-                  <input class="custom-radio" type="radio" id="value-3" name="color" value="indigo">
-                  <label for="value-3">Apple Pay</label>
-                </div>
-
-                <div class="radio">
-                  <input class="custom-radio" type="radio" id="value-4" name="color" value="indigo">
-                  <label for="value-4">Наличными</label>
-                </div>
-
-
-
-              </div>
-
-
-              <div class="order-buttons">
-                <button class="order-buttons__back">
-                  <svg  width='31' height='12'>
-                    <use href='img/sprite/sprite.svg#back'></use>
-                  </svg>
-
-                  <span>
-                    Назад
-                  </span>
-                </button>
-
-                <button class="order-buttons__select main-button">
-                  Оформить заказ
-                </button>
-              </div>
-
-            </form>
-          </div>
-
-            <aside class="order-aside">
+            <aside class="order-aside order-mobile">
               <h2 class="order-aside__title">
                 Ваш заказ
               </h2>
@@ -85,17 +26,21 @@
                       </picture>
                     </div>
                     <div class="order-position__descr">
-                      <h3>
-                        Длинное пальто
-                      </h3>
+                      <h2>
+                        Длинное пальто (42-44)
+                        <span class="item-color"></span>
+                      </h2>
 
-                      <div class="order-price">
-                        <p class="order-price__new">
+
+                      <div class="number">
+                        <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                        <input type="number" min="0" value="1" readonly>
+                        <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                      </div>
+
+                      <div class="cart-descr__total">
+                        <p>
                           7999 ₽
-                        </p>
-
-                        <p class="order-price__old">
-                          9999 ₽
                         </p>
                       </div>
 
@@ -111,14 +56,25 @@
                       </picture>
                     </div>
                     <div class="order-position__descr">
-                      <h3>
-                        Куртка с капюшоном
-                      </h3>
-                      <div class="order-price">
-                        <p class="order-price__new">
-                          5999 ₽
+                      <h2>
+                        Куртка с
+                        капюшоном (L)
+                        <span class="item-color item-color--color"></span>
+                      </h2>
+
+
+                      <div class="number">
+                        <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                        <input type="number" min="0" value="1" readonly>
+                        <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                      </div>
+
+                      <div class="cart-descr__total">
+                        <p>
+                          7999 ₽
                         </p>
                       </div>
+
                     </div>
                   </div>
                 </li>
@@ -134,7 +90,7 @@
                   <p>
                     Скидка
                   </p>
-                  <span>
+                  <span class="order-aside__sale">
                     2000 ₽
                   </span>
                 </li>
@@ -155,6 +111,10 @@
                   </span>
                 </li>
               </ul>
+
+              <button class="add-basket main-button">
+                Оформить
+              </button>
             </aside>
 
 

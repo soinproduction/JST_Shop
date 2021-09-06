@@ -1,3 +1,17 @@
+.catalog-box {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    max-width: 870px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-gap: 50px 30px;
+    margin-bottom: 35px;
+  }
+}
+
 .catalog-first {
   margin-bottom: 60px;
 }

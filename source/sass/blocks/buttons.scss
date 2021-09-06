@@ -45,3 +45,14 @@
   position: relative;
   z-index: 10;
 }
+
+.show-more-mobile {
+  display: none;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  margin: 20px auto 0;
+  &::before {
+    background: inherit;
+  }
+}

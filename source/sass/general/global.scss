@@ -127,7 +127,7 @@ input[type="number"] {
 
 .select.is-active {
   .select__icon svg {
-    transform: scaleY(-1);
+    transform: translateY(-50%) scaleY(-1);
   }
 }
 

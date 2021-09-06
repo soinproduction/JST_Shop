@@ -171,6 +171,7 @@
 .mySwiperBig {
   max-width: 670px;
   width: 100%;
+  position: relative;
 
   .swiper-slide__image {
     position: relative;
@@ -313,7 +314,7 @@
   }
 }
 
-.slider-navigation {
+.slider-navigation--tabs {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
@@ -324,5 +325,28 @@
     svg {
       fill: #F8F8FB;
     }
+  }
+}
+
+.mySwiperBig-dots {
+  position: absolute;
+  display: none;
+  align-items: center;
+  grid-gap: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  span {
+    width: 10px;
+    height: 10px;
+    left: 155px;
+    border: 2px solid #E31E25;
+    border-radius: 50%;
+  }
+
+  span.swiper-pagination-bullet-active {
+    background: #E31E25;
   }
 }

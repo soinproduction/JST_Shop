@@ -1,0 +1,17 @@
+.mobile-burger {
+  flex-direction: column;
+  max-width: 22px;
+  margin-right: 20px;
+  width: 100%;
+
+  span {
+    width: 100%;
+    background: #000000;
+    height: 4.5px;
+    border-radius: 5px;
+
+    &:not(:first-child) {
+      margin-top: 3.5px;
+    }
+  }
+}
