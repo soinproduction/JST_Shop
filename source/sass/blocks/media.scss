@@ -22,7 +22,7 @@
     padding-bottom: 30px;
   }
 
-  body {
+  body, html {
     overflow-x: hidden;
     width: 100%;
   }
@@ -690,6 +690,171 @@
     .number, .cart-descr__total, .cart-list__hide, .item-color {
       display: none;
     }
+
+
+    .cart-list__image {
+      width: 42.12vw;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .cart-list__item {
+      grid-gap: 20px;
+      align-items: flex-start;
+    }
+
+    .cart-descr__top {
+      margin-bottom: 11px;
+    }
+
+    .cart-descr__top > h2 {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    .cart-descr__bottom {
+      grid-gap: 0;
+    }
+
+    .cart-descr {
+      position: relative;
+      height: 45vw;
+    }
+
+    .add-basket {
+      position: absolute;
+      bottom: 0;
+    }
   }
 
+  //  contacts---------
+
+  .contacts-box__top {
+    flex-direction: column;
+    grid-gap: 40px;
+    margin: 30px 0 40px;
+  }
+
+  .contacts-box__item svg {
+    margin-bottom: 20px;
+    width: 15.625vw;
+    max-width: 100px;
+  }
+
+  .contacts-box__subtitle {
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contacts-adress {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .contacts-adress__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .adress-sub__item, .contacts-adress__title {
+    font-size: 16px;
+  }
+
+  // ------- 404
+
+  .error-box__image {
+    display: none;
+  }
+
+  .error-box__coll {
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .error-box__icon {
+    width: 43.750vw;
+    max-width: 360px;
+    margin-bottom: 46px;
+  }
+
+  .error-box__bottom p {
+    font-size: 10px;
+    line-height: 170%;
+    text-align: center;
+    padding: 0 20px;
+    color: #444444;
+  }
+
+
+  //  login -----
+
+  .login-box__image {
+    display: none;
+  }
+
+  .login-box__item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+  }
+
+  .login-box__item h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .login-box__item p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 170%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .login-social {
+    margin: 0 auto 20px;
+    justify-content: center;
+  }
+
+  .login-form__buttons {
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+
+  .login-form__sign {
+    width: 140px;
+    height: 40px;
+  }
+
+  .login-form__registration {
+    width: 175px;
+    height: 40px;
+  }
+
+
+  // cabinet
+
+  .tabcontent__inner {
+    flex-direction: column;
+  }
+
+  .cabinet-aside__button {
+    margin: 30px auto;
+  }
+
+  .cabinet-aside__list {
+    padding: 0;
+    border: none;
+  }
 }
