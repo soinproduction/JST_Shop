@@ -4,11 +4,11 @@ const newBody = document.querySelector(".item-box__coll");
 
 window.addEventListener('DOMContentLoaded', () => {
   const width = document.documentElement.clientWidth;
-  if (width > 578) {
+  if (width >= 576) {
     noveltyInit();
     findInit();
   }
-  if (width <= 767) {
+  if (width <= 576) {
     itemDescr.forEach(function(item) {   // i - index
     newBody.insertAdjacentElement("afterbegin", item);
   });
@@ -19,11 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
 
-
   const catalogList = document.querySelector('.big-catalog-list');
 
   if (document.querySelector('.big-catalog-list')) {
-    if (width <= 767) {
+    if (width <= 576) {
       const catalogButtons = catalogList.querySelectorAll('.catalog-nav__btn');
       const catalogNavList = catalogList.querySelectorAll('.catalog-list');
 
@@ -65,11 +64,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', () => {
   const width = document.documentElement.clientWidth;
-  if (width > 578) {
+  if (width >= 576) {
     noveltyInit();
     findInit();
   }
-  if (width <= 767) {
+  if (width <= 576) {
     itemDescr.forEach(function(item) {   // i - index
     newBody.insertAdjacentElement("afterbegin", item);
   });
@@ -81,7 +80,7 @@ window.addEventListener('resize', () => {
   const catalogList = document.querySelector('.big-catalog-list');
 
   if (document.querySelector('.big-catalog-list')) {
-    if (width <= 767) {
+    if (width <= 576) {
       const catalogButtons = catalogList.querySelectorAll('.catalog-nav__btn');
       const catalogNavList = catalogList.querySelectorAll('.catalog-list');
 
@@ -144,18 +143,18 @@ function noveltyInit() {
     },
 
     breakpoints: {
-      640: {
-        slidesPerView: 2,
+      577: {
+        slidesPerView: 3,
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1180: {
         slidesPerView: 4,
         spaceBetween: 30,
       },
+      // 992: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 30,
+      // },
     }
 
   });
@@ -219,14 +218,19 @@ let myTabsSlider = new Swiper('.myTabsSlider', {
       slidesPerView: 1.8,
       spaceBetween: 30,
     },
-    // 768: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 40,
-    // },
-    // 1180: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 30,
-    // },
+    577: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      navigation:false,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
   }
 
 });
