@@ -39,11 +39,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (width <= 576) {
 
+    if (filterBtn) {
+      filterBtn.onclick = function(e) {
+        e.preventDefault();
+        filterAside.classList.toggle('active'); // открытие меню
+      };
 
-    filterBtn.onclick = function(e) {
-      e.preventDefault();
-      filterAside.classList.toggle('active'); // открытие меню
+      closeAside.onclick = function() {
+        filterAside.classList.remove('active');
+      };
     };
+
 
 
     burgerBtn.onclick = function() {
@@ -51,9 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    closeAside.onclick = function() {
-      filterAside.classList.remove('active');
-    };
+
 
     closeBtn.onclick = function() {
       mobileMenu.classList.remove('active'); // закрытие меню
