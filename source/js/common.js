@@ -2,6 +2,25 @@ const itemDescr = [...document.querySelectorAll(".item-descr")];
 const itemBox = document.querySelector(".item-box");
 const newBody = document.querySelector(".item-box__coll");
 
+
+
+
+const burgerBtn = document.querySelector(".mobile-burger");
+const filterBtn = document.querySelector(".filter-row__btn");
+const filterAside = document.querySelector(".filter-aside");
+const closeAside = document.querySelector(".close-filter");
+
+const cabinetBtn = document.querySelector(".cabinet-on");
+const cabinetBox = document.querySelector(".cabinet-menu");
+const backBtn = document.querySelector(".back-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeBtn = document.querySelector(".close-menu");
+const sublistButton = document.querySelectorAll(".sublist-button");
+
+const catalogListItems = document.querySelectorAll(".catalog-list--first > .catalog-list__item");
+
+const firstSublist = mobileMenu.querySelectorAll('.first-sublist');
+
 window.addEventListener('DOMContentLoaded', () => {
   const width = document.documentElement.clientWidth;
   if (width >= 576) {
@@ -17,6 +36,84 @@ window.addEventListener('DOMContentLoaded', () => {
     itemBox.insertAdjacentElement("beforeend", item);
     });
   };
+
+  if (width <= 576) {
+
+
+    filterBtn.onclick = function(e) {
+      e.preventDefault();
+      filterAside.classList.toggle('active'); // открытие меню
+    };
+
+
+    burgerBtn.onclick = function() {
+      mobileMenu.classList.toggle('active'); // открытие меню
+    };
+
+
+    closeAside.onclick = function() {
+      filterAside.classList.remove('active');
+    };
+
+    closeBtn.onclick = function() {
+      mobileMenu.classList.remove('active'); // закрытие меню
+    };
+
+    backBtn.onclick = function() {
+      cabinetBox.classList.remove('active');
+    }
+
+    if ( document.URL.includes("cabinet.html") ) {
+        cabinetBtn.onclick = function(e) {
+        e.preventDefault();
+      };
+
+      burgerBtn.onclick = function() {
+        mobileMenu.classList.toggle('active');
+        cabinetBox.classList.add('active');
+        backBtn.classList.add('active');
+      };
+    } else {
+      cabinetBtn.onclick = function() {};
+    };
+
+    [...sublistButton].map((sublistBtn) => {
+      sublistBtn.onclick = function(){
+        this.nextElementSibling.classList.toggle('active'); // открытие первого уровня
+        backBtn.classList.add('active');
+
+        backBtn.onclick = function() {
+          this.classList.remove('active');
+          sublistBtn.nextElementSibling.classList.remove('active'); // закрытие первого уровня
+        }
+      }
+    });
+
+    [...catalogListItems].map((catalogListItem) => {
+      catalogListItem.onclick = function(e){
+        e.preventDefault();
+        this.classList.add('active');
+        backBtn.classList.add('active');
+        const catalogSubListItems = catalogListItem.querySelectorAll(".catalog-list__item > .catalog-list--sublist");
+
+        [...catalogSubListItems].map((catalogSubListItem) => catalogSubListItem.classList.add('active'));
+
+        backBtn.onclick = function() {
+        this.classList.remove('active');
+        [...firstSublist].map((items) => items.classList.remove('active'));
+
+        }
+      }
+    });
+
+
+
+  };
+
+
+
+
+
 
 
   const catalogList = document.querySelector('.big-catalog-list');
@@ -268,6 +365,7 @@ if (select.length) {
 function cabinetTabs(evt, navName) {
   // Declare all variables
   var i, tabcontent, tablinks;
+  mobileMenu.classList.remove('active');
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");

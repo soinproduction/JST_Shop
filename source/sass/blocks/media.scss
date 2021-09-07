@@ -1921,6 +1921,18 @@
     padding-bottom: 30px;
   }
 
+  .cabinet-nav {
+    display: none;
+  }
+
+  .close-filter {
+    display: block;
+  }
+
+  .cabinet-menu .cabinet-nav {
+    display: block;
+  }
+
   body, html {
     overflow-x: hidden;
     width: 100%;
@@ -2111,7 +2123,24 @@
 
 // catalog ----------------------------
   .filter-aside {
-    display: none;
+    position: fixed;
+    top: 0;
+    background: #F8F8FB;
+    z-index: 120;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 10px;
+    transition: all .4s;
+    transform: translateX(-110%);
+    &.active {
+      transform: translateX(0);
+    }
+
+    .close-filter {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
   }
 
   .option-box__coll:nth-child(1) {
@@ -2156,19 +2185,14 @@
     grid-gap: 15px;
     position: relative;
 
-    &::before {
-      content: 'Фильтры';
-      position: absolute;
+    .filter-row__btn  {
+      display: block;
       font-family: $font-family--alt;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 170%;
       color: $color-text--black;
-      width: 100%;
-      right: -55px;
-      top: 50%;
-      transform: translateY(-50%);
     }
   }
 
