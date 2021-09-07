@@ -54,6 +54,7 @@ footer {
     color: $color-text;
     position: relative;
     width: fit-content;
+    transition: all .4s;
 
     &::before {
       position: absolute;
@@ -64,10 +65,21 @@ footer {
       width: 3px;
       height: 3px;
       background-color: #444;
+      transition: all .4s;
     }
 
     &:not(:first-child) {
       margin-top: 12px;
+    }
+
+    &:hover, &.active {
+      padding-left: 30px;
+      color: #E31E25;
+
+      &::before {
+        width: 25px;
+        background: #E31E25;
+      }
     }
   }
 }
