@@ -1,8 +1,20 @@
+// const elements = document.querySelectorAll('.item-descr__box h2');
+
+// const showWidth = () => {
+//   elements.forEach(element => {
+//     const style = window.getComputedStyle(element, null);
+//     element.dataset.size = style.fontSize;
+//   })
+// }
+
+// showWidth();
+
+// window.addEventListener('resize', showWidth);
+
+
 const itemDescr = [...document.querySelectorAll(".item-descr")];
 const itemBox = document.querySelector(".item-box");
 const newBody = document.querySelector(".item-box__coll");
-
-
 
 
 const burgerBtn = document.querySelector(".mobile-burger");
@@ -20,6 +32,28 @@ const sublistButton = document.querySelectorAll(".sublist-button");
 const catalogListItems = document.querySelectorAll(".catalog-list--first > .catalog-list__item");
 
 const firstSublist = mobileMenu.querySelectorAll('.first-sublist');
+
+
+let catalog = document.querySelector('.catalog-box__item');
+let rowButton = document.querySelector('.row-button');
+let collButton = document.querySelector('.coll-button');
+
+if(catalog) {
+  rowButton.onclick = function(e) {
+    e.preventDefault();
+    this.classList.add("active");
+    collButton.classList.remove('active');
+    catalog.classList.add('row-item');
+  };
+
+  collButton.onclick = function(e) {
+    e.preventDefault();
+    collButton.classList.add("active");
+    rowButton.classList.remove('active');
+    catalog.classList.remove('row-item');
+  };
+};
+
 
 window.addEventListener('DOMContentLoaded', () => {
   const width = document.documentElement.clientWidth;
@@ -418,8 +452,6 @@ function show_hide_password(target){
 	}
 	return false;
 }
-
-
 
 
 

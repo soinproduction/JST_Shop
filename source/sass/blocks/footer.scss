@@ -41,6 +41,7 @@ footer {
       line-height: 120%;
       color: $color-text--black;
       margin-bottom: 30px;
+      white-space: nowrap;
     }
   }
 
@@ -60,7 +61,7 @@ footer {
       position: absolute;
       content: '';
       left: 0;
-      top: 50%;
+      top: 12px;
       transform: translateY(-50%);
       width: 3px;
       height: 3px;
